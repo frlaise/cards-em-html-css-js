@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box; }
+
+
+body{
+    background-color:#CCCC99FF;
+}
+
+
+h1{
+
+  color: #3A4743FF;
+  text-align: center;
+  font-family:Arial;
+  font-weight:bold;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+    height:309px;
+margin-top: 10px;
+  display: flex;
+  border: 1px solid #FFF; 
+   border-radius:10px;
+  justify-content: space-around;
+
+}
+
+
+@media (max-width: 800px) {
+ .container, .divi, .image, .absolute{
+    flex-direction: column;
+    
+  }
+}
+
+.divi {
+  margin:3px;
+  position: relative;
+  border: 2px solid #3A4743FF;
+  border-radius:10px;
+  height: 205px;
+  width: 210px;
+  background-size: contain;
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.divi .image{
+  width: 200px;
+  height: 200px;
+  border-radius:10px;
+     display: flex;
+  flex-wrap: wrap;
+
+}
+p{
+  text-align:center;
+}
+
+
+.absolute {
+
+  position: absolute;
+  display: flex;
+  width: 100%;
+margin:210px auto;
+  border-radius:10px;
+  border: 3px solid #566963;
+  animation: scale-up-hor-left 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+} 
+
+
+@-webkit-keyframes scale-up-hor-left {
+  0% {
+   transform: scaleX(0.4);
+   transform-origin: 0% 0%;
+  }
+  100% {
+  transform: scaleX(1);
+  transform-origin: 0% 0%;
+  }
+}
+@keyframes scale-up-hor-left {
+  0% {
+  transform: scaleX(0.4);
+   transform-origin: 0% 0%;
+  }
+  100% {
+  transform: scaleX(1);
+  transform-origin: 0% 0%;
+  }
+}
+
+.div2{
+
+  margin: 50px;
+
+  text-align: center;
+  color: #3A4743FF;
+  font-family:Arial;
+
+  font-weight:bold;
+}
+
+
+
+.collapsible {
+
+  width: 100%;
+  margin:2px;
+box-shadow:inset 0px 1px 3px 0px #91b8b3;
+  background:linear-gradient(to bottom, #768d87 5%, #6c7c7c 100%);
+
+  border-radius:5px;
+  border:1px solid #566963;
+  display:block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:11px 23px;
+  text-decoration:none;
+  text-shadow:0px -1px 0px #2b665e;
+}
+.collapsible :hover {
+  background:linear-gradient(to bottom, #6c7c7c 5%, #768d87 100%);
+  background-color:#6c7c7c;
+}
+.collapsible :active {
+  position:relative;
+  top:1px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible .content{
+
+  margin:10px auto;
+
+
+}
+
+
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+
+
+@media only screen and (max-device-width: 900px) {
+.collapsible { width:100%; }
+}
+
+@media only screen and (max-device-width: 900px) {
+.content { width:100%; 
+}
+}
+
+
+
+

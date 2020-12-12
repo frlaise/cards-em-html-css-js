@@ -1,0 +1,167 @@
+body #page-landing{
+	font-size: 30%;
+
+}
+
+#page-landing{
+		background: #5EB4FFFF;
+		height: 100%
+	
+}
+
+#page-landing #container{
+	color: #D5D5D5FF;
+
+}
+
+.logo-container img{
+	height: 10rem;
+	border: 3px solid #00FFFFFF;
+
+}
+
+
+.logo-container h2{
+	font-weight: 500;
+	font-size: 2.5rem;
+	line-height: 4.6rem;
+	margin-top: 0.8rem;
+}
+
+
+
+.logo-image{
+	width: 60%;
+}
+
+
+
+.buttons-container{
+
+display: flex;
+justify-content: center;
+margin: 3.2rem 0;
+
+}
+
+
+
+
+
+
+.buttons-container a{
+width: 14rem;
+height:5rem;
+
+border-radius: 0.8rem;
+margin-left: 1.4rem;
+
+font: 700 1.8rem Ubuntu;
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+text-decoration: none;
+
+transition: background: 0.2s;
+color: #EBEBEBFF;
+
+}
+
+.buttons-container a img{
+	width: 4rem;
+	
+}
+
+
+.buttons-container a.study{
+	background:  #6B6B6BFF;
+	margin-left: 1rem;
+
+}
+
+.buttons-container a.study:hover{
+	background: #9A9A9AFF;
+
+}
+
+.buttons-container a.give-classes{
+	background:#268;
+	margin-right: 1.5rem;
+
+}
+
+.buttons-container a.give-classes:hover{
+	background:#4CE570FF;
+	margin-right: 0;
+
+}
+.total-connections{
+	font: 700 1.8rem Ubuntu;
+	color: #FFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid #3EFCFFFF;
+}
+
+.total-connections img{
+	margin-left: 0.8rem;
+	
+}
+
+@media(min-width:1100px){
+	#page-landing #container{
+		max-width: 1100px;
+		display: grid;
+		grid-template-columns: 3fr 1fr 2fr;
+		grid-template-rows: 350px 1fr;
+		grid-template-areas: 
+		"logo image image"
+		"button button texting";
+		column-gap: 87px;
+		row-gap: 86px;
+	}
+
+	.logo-container{
+		grid-area: logo;
+		text-align: initial;
+		align-self: center;
+		margin: 0;
+	}
+
+	.logo-container img{
+		height: 127px;
+	}
+
+	.logo-image{
+		grid-area: image;
+		height: 350px;
+	}
+
+	.buttons-container{
+	grid-area: button;
+	justify-content: flex-start;
+	margin: 0;
+
+
+	}
+	
+	.total-connections{
+		grid-area: texting;
+		justify-self: end;
+		font-size: 1.2rem;
+	}
+
+	}
+
+
+
+
+
+
+
+

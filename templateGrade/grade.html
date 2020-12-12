@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<style>
+
+
+.boxe {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.boxe:nth-child(even) {
+  background-color: #ccc;
+  color: #000;
+}
+
+.wrapperr {
+  width: 600px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: 100px 100px 100px;
+  grid-auto-flow: column;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+   grid-template-rows: 100px 90px;
+  grid-gap: 10px;
+  background-color: #ccc;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+
+</style>
+</head>
+<body>
+	
+
+
+
+<div class="wrapperr">
+  <div class="boxe">1</div>
+  <div class="boxe">2</div>
+  <div class="boxe">3</div>
+  <div class="boxe">4</div>
+  <div class="boxe">5</div>
+  <div class="boxe">6</div>
+  <div class="boxe">7</div>
+  <div class="boxe">8</div>
+  <div class="boxe">9</div>
+  <div class="boxe">10</div>
+  <div class="boxe">11</div>
+  <div class="boxe">12</div>
+</div>
+
+<br>
+
+<div class="wrapper">
+ <div class="box a">A</div>
+  <div class="box b">B</div>
+  <div class="box c">C</div>
+  <div class="box d">D</div>
+  <div class="box e">E</div>
+  <div class="box f">F</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+
+ *{
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Arial;
+overflow:hidden;
+ padding:0px;
+ margin:0px;
+background:#B0FFF2FF;
+
+
+}
+
+
+h1{
+
+ text-align: center;
+ color: #FF2020FF;
+}
+
+/*figura-2 do lado esquerdo*/
+
+  a.model1{
+ background:transparent url("../model_big.png") no-repeat top left;
+ position:absolute;
+
+ width:336px;
+ height:893px;
+ outline:none;
+ top:30px;
+ right:60px;
+opacity:0.9;   
+}
+
+a.model1:hover{
+opacity:1.0;
+                
+}
+/* figura-2 do lado esquerdo*/
+            
+.model2{
+background:transparent url("../img/model_big.png") no-repeat top left;
+ box-shadow: 3px 5px 3px 2px #FF5634FF;
+ border: 2px solid #FF5634FF;
+
+position:absolute;
+width:336px;
+height:893px;
+outline:none;
+top:50px;
+right:15px;
+ opacity:0.4;
+
+}
+a.back{
+position:absolute;
+bottom:20px;
+left:730px;
+width:230px;
+ height:40px;
+text-align:center;
+text-transform:uppercase;
+line-height:40px;
+ color:#ddd;
+ background-color:#291A2F;
+ letter-spacing:1px;
+ font-size:11px;
+ cursor:pointer;
+ text-decoration:none;
+ text-shadow:0px 0px 1px #fff;
+box-shadow:-1px 0px 5px #000;
+ opacity:0.9;
+
+}
+            
+a.back:hover{
+                opacity:1.0;
+            
+            }
+
+
+ul.menu{
+    list-style:none;
+    font-family: "Trebuchet MS", Arial, sans-serif;;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform:uppercase;
+    letter-spacing: normal;
+    line-height: 1.45em;
+    position: fixed;
+    bottom:20px;
+    left:20px;
+    width:700px;
+    height:100%;
+}
+
+
+ul.menu li{
+    float:left;
+    position:relative;
+    height:100%;
+    width:130px;
+}
+ul.menu li > a{
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    width:130px;
+    height:40px;
+    text-align:center;
+    line-height:40px;
+    color:#ddd;
+    background-color:#291A2F;
+    letter-spacing:1px;
+    cursor:pointer;
+    text-decoration:none;
+    text-shadow:0px 0px 1px #fff;
+    box-shadow:-1px 0px 5px #000;
+    opacity:0.9;
+   
+}
+
+
+/* Thumb Scrolling Style */
+div.sc_menu_wrapper {
+    position: absolute;
+    top:0px;
+    width:150px;
+    overflow: hidden;
+    bottom:0px;
+    left:0px;
+    visibility:hidden;
+}
+div.sc_menu {
+    width:130px;
+    visibility:hidden;
+}
+
+

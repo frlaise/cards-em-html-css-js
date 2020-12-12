@@ -1,0 +1,54 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+   background: #CFD4F5;
+
+}
+
+
+h1{
+
+  text-align: center;
+  font-size: 40px;
+
+    letter-spacing: 5px;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+  margin-top: 20px;
+   border: groove;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {
+
+  background-color:#7C0B8B ;
+}
+#News {background-color:#367706;
+}
+#Contact {background-color:#0D1F92 ;
+}
+#About {background-color:#A72F14;
+}

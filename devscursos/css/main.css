@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+html, body #page-landing{
+	height: 100vh;
+	background-color: #FFFF;
+	border: 5px solid #85F9FFFF;
+	margin: 0 auto;
+
+
+
+}
+
+
+body #page-landing{
+
+	display: flex;
+align-items: center;
+	justify-content: center;
+
+
+}
+
+body, input, button, textarea{
+	font-weight: 500;
+font-family: Ubuntu ;
+	font-size: 1.4rem;
+	color: #2C2C2CFF;
+
+}
+
+
+
+#container{
+	width:  90vw;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+@media(min-width: 700px){
+	body #page-landing{
+		font-size: 62.5%;
+	}
+}

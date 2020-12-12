@@ -1,0 +1,102 @@
+
+
+#capa{
+width: 720px;
+margin-top:5px;
+  background-image: url('../img/floresta1.png');
+  background-repeat: no-repeat;
+   background-color: #55AA00;
+    border-left: 6px solid red;
+	font-size: 50px;
+	text-align:center;
+	font-family: 'Galada', cursive;
+	 line-height: 1;
+	color: #0C4300FF;
+	 text-shadow: 3px 3px #FFFFFFFF;
+	margin-top: 10px;
+	animation-name: slide-in-bck-left;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes slide-in-bck-left {
+  0%{
+    -webkit-transform: translateZ(700px) translateX(-400px);
+    transform: translateZ(700px) translateX(-400px);
+    opacity: 0;
+  }
+  100%{
+    -webkit-transform: translateZ(0) translateX(0);
+    transform: translateZ(0) translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+.div1{
+	  position: absolute;
+	width: 630px;
+margin-top:310px;
+border: 2px red;
+z-index: 2;
+}
+
+
+.curupira{
+	  position: relative;
+	width: 225px;
+	margin-left: 120px;
+	display: block;
+	margin-top:90px;
+	z-index: 1;
+
+  animation-name: slide-in-blurred-left;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+}
+@keyframes slide-in-blurred-left {
+  0%{
+    -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(.2);
+    transform: translateX(-1000px) scaleX(2.5) scaleY(.2);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100%{
+    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+    transform: translateX(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+#text{
+width: 680px;
+border: 5px groove #FFF;
+  border-radius: 5px;
+margin-top:90px;
+
+}
+
+#text p{
+	font-size: 24px;
+	font-family: 'Galada', cursive;
+	margin-top:10px;
+	color: #fff;
+  margin-left: 10px;
+
+}
+
+
+

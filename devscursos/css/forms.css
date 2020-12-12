@@ -1,0 +1,44 @@
+.select-block label, 
+.input-block label,
+.textarea-block label{
+	font-size: 1.4rem;
+	color: #2A2A2AFF;
+	
+}
+
+.input-block input, 
+.select-block select,
+.textarea-block textarea{
+	width: 100%;
+	height: 5.6rem;
+	margin-top: 0.8rem;
+	border-radius: 0.8rem;
+	background: #FFF;
+	border: 1px solid #787878FF;
+	outline: 0;
+	padding: 0 1.2rem;
+	font: 1.2rem Ubuntu;
+}
+
+.textarea-block textarea{
+	padding: 1.2rem 1.6rem;
+	height: 1.6rem;
+	resize: vertical;
+}
+
+.input-block,
+.textarea-block{
+	position: relative;
+}
+
+.input-block:focus-within::after,
+.textarea-block:focus-within::after{
+	content: "";
+	width: 67%;
+	height: 2px;
+	background: #3340FFFF;
+
+	position: absolute;
+	left: 1.6rem;
+	bottom:0px;
+}

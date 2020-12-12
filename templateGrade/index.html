@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<style>
+	body{
+		width: 450px;
+		height: 500px;
+		margin-left: 50px;
+
+	}
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+   grid-template-rows: 100px 100px;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+   grid-template-rows: 100px 90px;
+  grid-gap: 10px;
+  background-color: #ccc;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+
+.boxe {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.boxe:nth-child(even) {
+  background-color: #ccc;
+  color: #000;
+}
+
+.wrapperr {
+  width: 600px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: 100px 100px 100px;
+  grid-auto-flow: column;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>Grid Container e A propriedade da coluna de grade</h1>
+<p>Um contêiner de grade consiste em itens de grade organizados em colunas e linhas</p>
+<p>Os elementos filhos diretos do contêiner de grade se tornam automaticamente itens de grade.</p>
+
+
+
+	<p>
+	Use a propriedade <em> grid-column </em> para especificar onde colocar um item.</p>
+<p> Item 1 começará na coluna 1 e terminará antes da coluna 5: 
+	
+	A grid-template-rows propriedade define a altura de cada linha.
+	</p>
+
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+</div>
+
+<br><br><br>
+
+
+
+	<div class="wrapper">
+ <div class="box a">A</div>
+  <div class="box b">B</div>
+  <div class="box c">C</div>
+  <div class="box d">D</div>
+  <div class="box e">E</div>
+  <div class="box f">F</div>
+</div>
+
+<br><br><br>
+
+<div class="wrapperr">
+  <div class="boxe">1</div>
+  <div class="boxe">2</div>
+  <div class="boxe">3</div>
+  <div class="boxe">4</div>
+  <div class="boxe">5</div>
+  <div class="boxe">6</div>
+  <div class="boxe">7</div>
+  <div class="boxe">8</div>
+  <div class="boxe">9</div>
+  <div class="boxe">10</div>
+  <div class="boxe">11</div>
+  <div class="boxe">12</div>
+</div>
+	
+</body>
+</html>

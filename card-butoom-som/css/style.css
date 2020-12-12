@@ -1,0 +1,47 @@
+.menu{ display:flex; 
+flex-wrap: wrap; 
+}
+.menu > div{ background-color:#09F; 
+padding:20px; 
+cursor:pointer;
+margin-left:10px;
+border-radius:30%;
+font-weight:bold;
+box-shadow:0 3px 3px rgba(0,0,0,.4);
+}
+.menu > div:hover{ background-color:#0CC;
+transform:scale(1.1); 
+box-sizing:border-box; 
+}
+
+
+.nav1{
+	margin:50px;
+	width: 300px;
+	height: 100px;
+background: #6219FFFF;
+}
+
+
+
+.nav1 > a{
+	background: #FF9E02FF;
+	color: #000;
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 5px;
+	font-family: sans;
+}
+
+
+.nav1 > a:hover{
+	background: #0BFF85FF;
+
+}
+
+.nav1  a:active{
+	background: #DB0CFFFF;
+}
+
+
+
